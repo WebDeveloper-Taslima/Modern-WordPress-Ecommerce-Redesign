@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temima Cabinets | Luxury Kitchen & Bath Cabinetry Retailer</title>
+  <meta name="description" content="Temima Cabinets - High-end solid wood kitchen cabinets, ready-to-assemble and custom bath vanities. Free 3D design quotes and fast nationwide freight delivery.">
+  
+  <!-- Google Fonts & FontAwesome CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Design System Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       TOP MOCKUP CONTROL BAR (DESIGN PRESENTATION & TEMPLATE SWITCHER)
+       ========================================================================== -->
+  <div class="control-bar">
+    <div class="control-brand">
+      <i class="fas fa-cubes"></i> Temima UI <span>6 Templates</span>
+    </div>
+
+    <!-- 6 Key Template Switcher Buttons -->
+    <div class="template-nav">
+      <button class="template-btn active" data-template="home"><i class="fas fa-home"></i> 1. Home</button>
+      <button class="template-btn" data-template="category"><i class="fas fa-th-large"></i> 2. Category</button>
+      <button class="template-btn" data-template="product"><i class="fas fa-box-open"></i> 3. Product</button>
+      <button class="template-btn" data-template="quote"><i class="fas fa-drafting-compass"></i> 4. Free Quote</button>
+      <button class="template-btn" data-template="cart"><i class="fas fa-shopping-bag"></i> 5. Cart</button>
+      <button class="template-btn" data-template="checkout"><i class="fas fa-credit-card"></i> 6. Checkout</button>
+    </div>
+
+    <!-- Desktop vs Mobile Viewport Switcher -->
+    <div class="viewport-controls">
+      <button class="viewport-btn active" data-mode="desktop"><i class="fas fa-desktop"></i> Desktop</button>
+      <button class="viewport-btn" data-mode="mobile"><i class="fas fa-mobile-alt"></i> Mobile</button>
+    </div>
+  </div>
+
+  <!-- VIEWPORT FRAME WRAPPER FOR DESKTOP / MOBILE SIMULATION -->
+  <div class="viewport-frame" id="viewportFrame">
+
+    <!-- ==========================================================================
+         SITE HEADER & NAVIGATION
+         ========================================================================== -->
+    <header class="site-header">
+      <div class="top-announcement">
+        <span><i class="fas fa-truck-fast"></i> <strong>FREE Freight Shipping</strong> on Orders Over $1,000</span>
+        <span><i class="fas fa-calendar-check"></i> <strong>Free 3D Design & Instant Quote</strong> in 24 Hours</span>
+      </div>
+
+      <div class="header-main">
+        <a href="#" class="logo-wrapper" data-target-template="home">
+          <div class="logo-icon">T</div>
+          <div class="logo-text">
+            <span class="title">TEMIMA</span>
+            <span class="subtitle">CABINETRY & MILLWORK</span>
+          </div>
+        </a>
+
+        <nav class="main-nav">
+          <a href="#" class="nav-link active-link" data-target-template="home">Home</a>
+          <a href="#" class="nav-link" data-target-template="category">Shop Cabinets</a>
+          <a href="#" class="nav-link" data-target-template="product">Featured Product</a>
+          <a href="#" class="nav-link" data-target-template="quote">Get a Free Quote</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="quote-btn-header" data-target-template="quote">
+            <i class="fas fa-magic"></i> <span>3D Quote Estimator</span>
+          </button>
+          <button class="cart-icon-btn" data-target-template="cart" title="View Cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">3</span>
+          </button>
+          <button class="mobile-menu-btn" title="Toggle Menu"><i class="fas fa-bars"></i></button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ==========================================================================
+         TEMPLATE 1: HOME PAGE
+         ========================================================================== -->
+    <main id="template-home" class="page-view">
+      <div class="page-container">
+        
+        <!-- Hero Section -->
+        <section class="hero-section">
+          <div class="hero-content">
+            <span class="hero-tag"><i class="fas fa-star"></i> Solid Wood Cabinetry Retailer</span>
+            <h1 class="hero-title">Architectural Luxury <span>Simplified for Your Home</span></h1>
+            <p class="hero-subtitle">Premium ready-to-assemble and pre-assembled solid wood kitchen cabinets, vanities, and custom hardware delivered direct to your door.</p>
+            <div class="hero-cta-group">
+              <button class="btn-primary" data-target-template="quote"><i class="fas fa-calculator"></i> Get Free 3D Design & Quote</button>
+              <button class="btn-secondary" data-target-template="category"><i class="fas fa-layer-group"></i> Explore Door Styles</button>
+            </div>
+            <div class="hero-trust-badges">
+              <div class="trust-item"><i class="fas fa-shield-alt"></i> 10-Year Solid Wood Warranty</div>
+              <div class="trust-item"><i class="fas fa-truck"></i> 5-Day Direct Shipping</div>
+              <div class="trust-item"><i class="fas fa-headset"></i> Dedicated Cabinet Designer</div>
+            </div>
+          </div>
+          <div class="hero-media">
+            <div class="hero-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1600&q=80" alt="Luxury Modern Kitchen Cabinets">
+            </div>
+            <div class="floating-card">
+              <div class="floating-icon"><i class="fas fa-award"></i></div>
+              <div>
+                <strong style="font-size:1rem; display:block;">4.9 / 5.0 Star Rating</strong>
+                <span style="font-size:0.78rem; color:#9CA3AF;">Over 12,000+ Kitchen Remodels Completed</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Interactive Cabinet Door Style Visualizer -->
+        <section class="visualizer-section">
+          <div class="section-heading">
+            <span class="section-badge">Interactive Visualizer</span>
+            <h2>Choose Your Signature Cabinet Finish</h2>
+            <p>Select a finish swatch below to preview how Temima door styles elevate modern kitchen aesthetics.</p>
+          </div>
+          <div class="visualizer-grid">
+            <div class="visualizer-controls">
+              <h3 id="visualizerTitle">Alpine White Shaker</h3>
+              <p style="color:var(--color-text-muted); font-size:0.875rem; margin-bottom:1.25rem;">Pure crisp white with smooth satin lacquer finish. Solid maple face frame with soft-close Blum hinges.</p>
+              
+              <div class="option-group">
+                <span class="option-label" style="font-size:0.8rem; font-weight:700; color:var(--color-text-muted);">Popular Finishes:</span>
+                <div class="swatch-picker">
+                  <button class="swatch-btn selected" data-color="white" title="Alpine White"></button>
+                  <button class="swatch-btn" data-color="navy" title="Horizon Navy"></button>
+                  <button class="swatch-btn" data-color="espresso" title="Craftsman Espresso"></button>
+                  <button class="swatch-btn" data-color="oak" title="Warm Oak Slab"></button>
+                </div>
+              </div>
+
+              <button class="btn-outline" data-target-template="product" style="width:100%; margin-top:1.25rem;">
+                <i class="fas fa-sliders-h"></i> Configure Cabinet Specifications
+              </button>
+            </div>
+            <div class="visualizer-preview-box">
+              <img id="visualizerPreviewImg" class="visualizer-preview-img" src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=80" alt="Cabinet Swatch Preview">
+            </div>
+          </div>
+        </section>
+
+        <!-- Category Showcase Grid -->
+        <section style="margin-bottom: 3.5rem;">
+          <div class="section-heading">
+            <span class="section-badge">Product Collections</span>
+            <h2>Shop by Category</h2>
+            <p>Browse our complete line of base cabinets, wall units, bath vanities, and premium quartz surfaces.</p>
+          </div>
+
+          <div class="category-cards-grid">
+            <div class="cat-card">
+              <div class="cat-card-img">
+                <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=80" alt="Base Cabinets">
+              </div>
+              <div class="cat-card-content">
+                <h3>Base & Corner Cabinets</h3>
+                <p>Heavy-duty dovetail drawers, full extension runners, and lazy susan corner units.</p>
+                <a href="#" class="cat-card-link" data-target-template="category">Explore Base Line <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <div class="cat-card">
+              <div class="cat-card-img">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Wall Cabinets">
+              </div>
+              <div class="cat-card-content">
+                <h3>Wall & Pantry Cabinets</h3>
+                <p>Available in 30", 36", and 42" heights with adjustable solid plywood shelves.</p>
+                <a href="#" class="cat-card-link" data-target-template="category">Explore Wall Units <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+
+            <div class="cat-card">
+              <div class="cat-card-img">
+                <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" alt="Bath Vanities">
+              </div>
+              <div class="cat-card-content">
+                <h3>Bathroom Vanities</h3>
+                <p>Single and double sink vanity units in modern floating and freestanding styles.</p>
+                <a href="#" class="cat-card-link" data-target-template="category">Explore Vanities <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Banner CTA for Free Quote -->
+        <section class="quote-cta-banner">
+          <div class="quote-cta-content">
+            <span class="section-badge">Free 3D Design Service</span>
+            <h2>Send Us Your Floor Plan, Get a Full Custom Render</h2>
+            <p>Our experienced architectural designers will turn your rough measurements into a photorealistic 3D kitchen design with exact itemized pricing.</p>
+            <ul class="feature-check-list">
+              <li><i class="fas fa-check-circle"></i> 100% Free - No Obligation</li>
+              <li><i class="fas fa-check-circle"></i> Itemized WooCommerce Quote</li>
+              <li><i class="fas fa-check-circle"></i> Turnaround within 24 Hours</li>
+              <li><i class="fas fa-check-circle"></i> Direct Designer Phone Support</li>
+            </ul>
+            <button class="btn-primary" data-target-template="quote"><i class="fas fa-upload"></i> Start Free Design Quote</button>
+          </div>
+          <div>
+            <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=800&q=80" style="border-radius:var(--radius-md); box-shadow:var(--shadow-md);" alt="Kitchen Design Plan">
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- ==========================================================================
+         TEMPLATE 2: CATEGORY / SHOP PAGE
+         ========================================================================== -->
+    <main id="template-category" class="page-view" style="display: none;">
+      <div class="page-container">
+        
+        <div style="margin-bottom: 2rem;">
+          <h1 style="font-size:2rem; margin-bottom:0.4rem;">Kitchen & Bath Cabinetry Collection</h1>
+          <p style="color:var(--color-text-muted);">Explore our premium solid wood cabinetry lines. Filter by style, finish, or cabinet dimensions.</p>
+        </div>
+
+        <div class="shop-layout">
+          
+          <!-- Filter Sidebar -->
+          <aside class="filter-sidebar">
+            <div class="filter-header">
+              <h3><i class="fas fa-filter"></i> Refine Search</h3>
+              <button class="clear-filters-btn" id="clearFiltersBtn">Reset All</button>
+            </div>
+
+            <!-- Style Filter -->
+            <div class="filter-group">
+              <span class="filter-title">Door Style</span>
+              <div class="checkbox-list">
+                <label class="custom-checkbox">
+                  <input type="checkbox" class="filter-checkbox filter-style-check" value="Shaker"> Classic Shaker
+                  <span class="checkbox-count">(24)</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" class="filter-checkbox filter-style-check" value="Slab"> Modern Slab / Flat
+                  <span class="checkbox-count">(14)</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" class="filter-checkbox filter-style-check" value="Craftsman"> Craftsman Raised
+                  <span class="checkbox-count">(9)</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Finish Filter -->
+            <div class="filter-group">
+              <span class="filter-title">Finish / Color</span>
+              <div class="checkbox-list">
+                <label class="custom-checkbox">
+                  <input type="checkbox" class="filter-checkbox filter-finish-check" value="White"> Alpine White
+                  <span class="checkbox-count">(18)</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" class="filter-checkbox filter-finish-check" value="Navy"> Horizon Navy
+                  <span class="checkbox-count">(12)</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" class="filter-checkbox filter-finish-check" value="Espresso"> Espresso Wood
+                  <span class="checkbox-count">(10)</span>
+                </label>
+                <label class="custom-checkbox">
+                  <input type="checkbox" class="filter-checkbox filter-finish-check" value="Oak"> Warm Oak
+                  <span class="checkbox-count">(7)</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Stock Availability -->
+            <div class="filter-group">
+              <span class="filter-title">Stock Status</span>
+              <label class="custom-checkbox">
+                <input type="checkbox" checked> In Stock - Ready to Ship
+              </label>
+            </div>
+          </aside>
+
+          <!-- Main Shop Grid -->
+          <div class="shop-main">
+            
+            <div class="shop-toolbar">
+              <span class="results-count" id="resultsCount">Showing 4 products</span>
+
+              <div class="active-filter-tags">
+                <span class="filter-tag">In Stock <i class="fas fa-times"></i></span>
+                <span class="filter-tag">Shaker Style <i class="fas fa-times"></i></span>
+              </div>
+
+              <div class="toolbar-controls">
+                <label style="font-size:0.8rem; font-weight:600; color:var(--color-text-muted);">Sort By:</label>
+                <select class="sort-select" id="sortSelect">
+                  <option>Featured & Popular</option>
+                  <option>Price: Low to High</option>
+                  <option>Price: High to Low</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Product Grid Cards -->
+            <div class="product-grid">
+              
+              <!-- Card 1 -->
+              <div class="product-card shop-product-card" data-style="Shaker" data-finish="White" data-price="349">
+                <span class="product-badge">Bestseller</span>
+                <div class="product-thumb">
+                  <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=80" alt="White Shaker Base Cabinet">
+                </div>
+                <div class="product-info">
+                  <span class="product-category-tag">Base Cabinet</span>
+                  <h3 class="product-title">Classic White Shaker Base Cabinet 30"</h3>
+                  <div class="product-rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <span>(48 reviews)</span>
+                  </div>
+                  <div class="product-bottom-row">
+                    <div class="product-price">
+                      <span class="price-current">$349.00</span>
+                    </div>
+                    <button class="add-cart-btn" data-target-template="product"><i class="fas fa-sliders-h"></i> Configure</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="product-card shop-product-card" data-style="Slab" data-finish="Navy" data-price="429">
+                <span class="product-badge">New Line</span>
+                <div class="product-thumb">
+                  <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Navy Wall Cabinet">
+                </div>
+                <div class="product-info">
+                  <span class="product-category-tag">Wall Cabinet</span>
+                  <h3 class="product-title">Horizon Navy Modern Wall Cabinet 36"</h3>
+                  <div class="product-rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    <span>(31 reviews)</span>
+                  </div>
+                  <div class="product-bottom-row">
+                    <div class="product-price">
+                      <span class="price-current">$429.00</span>
+                    </div>
+                    <button class="add-cart-btn" data-target-template="product"><i class="fas fa-sliders-h"></i> Configure</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="product-card shop-product-card" data-style="Craftsman" data-finish="Espresso" data-price="589">
+                <div class="product-thumb">
+                  <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=800&q=80" alt="Espresso Pantry Unit">
+                </div>
+                <div class="product-info">
+                  <span class="product-category-tag">Tall Pantry</span>
+                  <h3 class="product-title">Craftsman Espresso Tall Pantry Cabinet 84"</h3>
+                  <div class="product-rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <span>(19 reviews)</span>
+                  </div>
+                  <div class="product-bottom-row">
+                    <div class="product-price">
+                      <span class="price-current">$589.00</span>
+                    </div>
+                    <button class="add-cart-btn" data-target-template="product"><i class="fas fa-sliders-h"></i> Configure</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="product-card shop-product-card" data-style="Slab" data-finish="Oak" data-price="699">
+                <span class="product-badge">Luxury Series</span>
+                <div class="product-thumb">
+                  <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80" alt="Oak Bath Vanity">
+                </div>
+                <div class="product-info">
+                  <span class="product-category-tag">Bath Vanity</span>
+                  <h3 class="product-title">Modern Natural Oak Floating Vanity 48"</h3>
+                  <div class="product-rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <span>(26 reviews)</span>
+                  </div>
+                  <div class="product-bottom-row">
+                    <div class="product-price">
+                      <span class="price-current">$699.00</span>
+                    </div>
+                    <button class="add-cart-btn" data-target-template="product"><i class="fas fa-sliders-h"></i> Configure</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- ==========================================================================
+         TEMPLATE 3: SINGLE PRODUCT PAGE
+         ========================================================================== -->
+    <main id="template-product" class="page-view" style="display: none;">
+      <div class="page-container">
+        
+        <div class="product-detail-grid">
+          
+          <!-- Product Gallery -->
+          <div class="product-gallery">
+            <div class="main-gallery-view">
+              <img id="mainGalleryImg" src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=80" alt="White Shaker Base Cabinet Main View">
+            </div>
+            <div class="gallery-thumbs">
+              <div class="thumb-item active" data-img="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=80">
+                <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=80" alt="Main Front">
+              </div>
+              <div class="thumb-item" data-img="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80">
+                <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80" alt="Kitchen Context">
+              </div>
+              <div class="thumb-item" data-img="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80">
+                <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80" alt="Drawer Hardware Detail">
+              </div>
+              <div class="thumb-item" data-img="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=800&q=80">
+                <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=800&q=80" alt="Structure Frame">
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Configurator Options -->
+          <div class="product-configurator">
+            <div class="product-meta-header">
+              <span class="product-sku">SKU: TC-WS-B30 | IN STOCK</span>
+              <h1>Classic White Shaker Base Cabinet</h1>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <span>(48 Verified Reviews)</span>
+              </div>
+              <div class="price-dynamic-box">
+                <span class="current" id="dynamicProductPrice">$349.00</span>
+                <span class="price-old" style="font-size:0.85rem; color:#9CA3AF; text-decoration:line-through;">$420.00</span>
+              </div>
+            </div>
+
+            <!-- Size Configurator -->
+            <div class="config-step">
+              <div class="config-title">1. Select Width Size: <span>30" Selected</span></div>
+              <div class="size-selector-grid">
+                <button class="size-btn" data-size="24&quot;" data-price="319">24" ($319)</button>
+                <button class="size-btn selected" data-size="30&quot;" data-price="349">30" ($349)</button>
+                <button class="size-btn" data-size="36&quot;" data-price="399">36" ($399)</button>
+              </div>
+            </div>
+
+            <!-- Door Hinge Orientation -->
+            <div class="config-step">
+              <div class="config-title">2. Door Hinge Swing:</div>
+              <div class="hinge-options">
+                <div class="radio-pill hinge-pill selected" data-hinge="Right">
+                  <i class="fas fa-door-open"></i> Soft-Close Right
+                </div>
+                <div class="radio-pill hinge-pill" data-hinge="Left">
+                  <i class="fas fa-door-open" style="transform:scaleX(-1);"></i> Soft-Close Left
+                </div>
+              </div>
+            </div>
+
+            <!-- Quantity & Add to Cart -->
+            <div class="add-to-cart-bar">
+              <div class="qty-control">
+                <button class="qty-btn" onclick="let input=document.getElementById('productQtyInput'); if(input.value>1) input.value--;">-</button>
+                <input type="text" id="productQtyInput" class="qty-input" value="1" readonly>
+                <button class="qty-btn" onclick="let input=document.getElementById('productQtyInput'); input.value++;">+</button>
+              </div>
+              <button class="btn-primary" id="addToCartSingleBtn" style="flex:1;"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+            
+            <button class="btn-outline" data-target-template="quote" style="width:100%;">
+              <i class="fas fa-calculator"></i> Add to Free 3D Design Quote
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Sticky Mobile Cart Bar -->
+        <div class="mobile-sticky-cart">
+          <div>
+            <strong style="font-size:1.1rem; display:block;">$349.00</strong>
+            <span style="font-size:0.75rem; color:var(--color-text-muted);">White Shaker 30"</span>
+          </div>
+          <button class="btn-primary" id="mobileAddToCartSingleBtn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+
+        <!-- Product Specs Tabs -->
+        <div class="product-tabs-section">
+          <div class="tab-nav">
+            <button class="tab-btn active" data-tab="specs">Specs & Construction</button>
+            <button class="tab-btn" data-tab="assembly">Assembly Guide</button>
+            <button class="tab-btn" data-tab="shipping">Freight & Warranty</button>
+          </div>
+
+          <div class="tab-content active" id="tab-specs">
+            <table class="specs-table">
+              <tr><td>Face Frame Material</td><td>3/4" Solid Maple Wood Frame</td></tr>
+              <tr><td>Cabinet Box Body</td><td>1/2" Grade-A Plywood (No Particle Board)</td></tr>
+              <tr><td>Drawer Box</td><td>5/8" Solid Hardwood Dovetail Drawer Box</td></tr>
+              <tr><td>Glides & Hinges</td><td>Blumotion Soft-Close Full Extension Undermount Glides</td></tr>
+            </table>
+          </div>
+
+          <div class="tab-content" id="tab-assembly">
+            <p>Our Ready-To-Assemble (RTA) cabinets feature metal L-bracket clips and cam-lock technology for fast 15-minute assembly using just a screwdriver.</p>
+          </div>
+
+          <div class="tab-content" id="tab-shipping">
+            <p>Ships nationwide in heavy-duty reinforced pallet boxes. Orders over $1,000 qualify for FREE Freight Delivery with liftgate service included.</p>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- ==========================================================================
+         TEMPLATE 4: GET-A-FREE-QUOTE PAGE (MULTI-STEP WIZARD)
+         ========================================================================== -->
+    <main id="template-quote" class="page-view" style="display: none;">
+      <div class="page-container">
+        
+        <div class="section-heading">
+          <span class="section-badge">Free 3D Design & Estimator</span>
+          <h2>Request Your Custom Cabinet Quote</h2>
+          <p>Complete our 4-step wizard below. Our design team will render your kitchen and send an itemized quote to your email within 24 hours.</p>
+        </div>
+
+        <div class="quote-wizard-card">
+          
+          <!-- Wizard Header Progress Steps -->
+          <div class="wizard-header-steps">
+            <div class="step-item active" data-step="1">
+              <div class="step-number">1</div>
+              <span>Project Type</span>
+            </div>
+            <div class="step-item" data-step="2">
+              <div class="step-number">2</div>
+              <span>Style & Finish</span>
+            </div>
+            <div class="step-item" data-step="3">
+              <div class="step-number">3</div>
+              <span>Room Dimensions</span>
+            </div>
+            <div class="step-item" data-step="4">
+              <div class="step-number">4</div>
+              <span>Contact Info</span>
+            </div>
+          </div>
+
+          <!-- Wizard Body -->
+          <div class="wizard-body" id="wizardBody">
+            
+            <!-- Step 1: Project Type -->
+            <div class="wizard-step-pane active" id="wizardPane1">
+              <div class="step-title-box" style="margin-bottom:1.5rem;">
+                <h3>What type of cabinet project are you planning?</h3>
+                <p>Select your scope so we can assign the right specialist designer.</p>
+              </div>
+              <div class="project-type-cards">
+                <div class="type-select-card selected" data-type="Full Kitchen Remodel">
+                  <i class="fas fa-utensils" style="font-size:2rem; color:var(--color-primary); margin-bottom:0.75rem;"></i>
+                  <h4>Full Kitchen Remodel</h4>
+                  <p>Complete upper & lower cabinets</p>
+                </div>
+                <div class="type-select-card" data-type="New Construction">
+                  <i class="fas fa-hammer" style="font-size:2rem; color:var(--color-primary); margin-bottom:0.75rem;"></i>
+                  <h4>New Build / Construction</h4>
+                  <p>Custom layouts from blueprints</p>
+                </div>
+                <div class="type-select-card" data-type="Bathroom Vanity">
+                  <i class="fas fa-bath" style="font-size:2rem; color:var(--color-primary); margin-bottom:0.75rem;"></i>
+                  <h4>Bathroom & Storage</h4>
+                  <p>Vanities or laundry built-ins</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 2: Preferred Style & Finish -->
+            <div class="wizard-step-pane" id="wizardPane2">
+              <div class="step-title-box" style="margin-bottom:1.5rem;">
+                <h3>Choose your preferred cabinet door aesthetic:</h3>
+                <p>You can revise this later during design review.</p>
+              </div>
+              <div class="form-grid-2">
+                <div class="form-group">
+                  <label>Door Style Preference</label>
+                  <select class="form-input" id="quoteStyleSelect">
+                    <option>Classic Shaker (Alpine White)</option>
+                    <option>Horizon Navy Modern</option>
+                    <option>Craftsman Espresso</option>
+                    <option>Natural Warm Oak Slab</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Countertop Material</label>
+                  <select class="form-input" id="quoteCountertopSelect">
+                    <option>Quartz Surface (Calacatta Marble)</option>
+                    <option>Granite Slab</option>
+                    <option>Butcher Block Wood</option>
+                    <option>None - Cabinets Only</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 3: Room Dimensions & Upload Layout Sketch -->
+            <div class="wizard-step-pane" id="wizardPane3">
+              <div class="step-title-box" style="margin-bottom:1.5rem;">
+                <h3>Enter estimated room measurements & sketch:</h3>
+                <p>Upload a rough hand-drawn room sketch or blueprint file.</p>
+              </div>
+
+              <div class="form-grid-2" style="margin-bottom:1.25rem;">
+                <div class="form-group">
+                  <label>Approx. Wall Length (Feet)</label>
+                  <input type="number" class="form-input" value="14" placeholder="e.g. 14 ft">
+                </div>
+                <div class="form-group">
+                  <label>Approx. Wall Width (Feet)</label>
+                  <input type="number" class="form-input" value="12" placeholder="e.g. 12 ft">
+                </div>
+              </div>
+
+              <div class="file-upload-dropzone" id="fileDropzone">
+                <i class="fas fa-cloud-arrow-up" style="font-size:2.5rem; color:var(--color-accent); margin-bottom:0.75rem;"></i>
+                <h4>Click or Drag Floor Plan / Sketch File Here</h4>
+                <p>Supports PNG, JPG, PDF or Architectural CAD files (Max 25MB)</p>
+              </div>
+            </div>
+
+            <!-- Step 4: Contact & CRM Submission Form -->
+            <div class="wizard-step-pane" id="wizardPane4">
+              <div class="step-title-box" style="margin-bottom:1.5rem;">
+                <h3>Where should we email your 3D quote & layout?</h3>
+                <p>Submissions route directly to our design team.</p>
+              </div>
+
+              <div class="form-grid-2">
+                <div class="form-group">
+                  <label>Full Name *</label>
+                  <input type="text" class="form-input" placeholder="John Smith" value="John Smith">
+                </div>
+                <div class="form-group">
+                  <label>Email Address *</label>
+                  <input type="email" class="form-input" placeholder="john@example.com" value="john@example.com">
+                </div>
+                <div class="form-group">
+                  <label>Phone Number *</label>
+                  <input type="tel" class="form-input" placeholder="(555) 000-0000" value="(555) 234-5678">
+                </div>
+                <div class="form-group">
+                  <label>Delivery Zip Code</label>
+                  <input type="text" class="form-input" placeholder="90210" value="90210">
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label>Special Instructions / Notes for Designer</label>
+                <textarea class="form-input" rows="3" placeholder="e.g. Need space for 36&quot; refrigerator."></textarea>
+              </div>
+            </div>
+
+            <!-- Wizard Footer Action Buttons -->
+            <div class="wizard-footer-actions">
+              <button class="btn-outline" id="wizardPrevBtn" style="visibility:hidden;"><i class="fas fa-arrow-left"></i> Previous</button>
+              <button class="btn-primary" id="wizardNextBtn">Next Step <i class="fas fa-arrow-right"></i></button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- ==========================================================================
+         TEMPLATE 5: CART PAGE
+         ========================================================================== -->
+    <main id="template-cart" class="page-view" style="display: none;">
+      <div class="page-container">
+        
+        <div style="margin-bottom: 1.5rem;">
+          <h1 style="font-size:2rem; margin-bottom:0.3rem;">Your Cabinet Shopping Cart</h1>
+          <p style="color:var(--color-text-muted);">Review your selected cabinet items, quantities, and apply discount codes.</p>
+        </div>
+
+        <div class="cart-layout">
+          
+          <!-- Cart Items Table -->
+          <div class="cart-table-wrapper">
+            
+            <div class="shipping-progress-banner">
+              <div class="progress-text" id="shippingProgressText">
+                <span>Freight Shipping: You are <strong>$222.00</strong> away from FREE Shipping!</span>
+                <span>78%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" id="shippingProgressFill" style="width: 78%;"></div>
+              </div>
+            </div>
+
+            <table class="cart-table">
+              <thead>
+                <tr>
+                  <th>Product Details</th>
+                  <th>Unit Price</th>
+                  <th>Quantity</th>
+                  <th style="text-align:right;">Subtotal</th>
+                </tr>
+              </thead>
+              <tbody id="cartTableBody">
+                <!-- Dynamic Content -->
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Summary Card -->
+          <div class="cart-summary-card">
+            <h3 class="summary-title">Order Summary</h3>
+            
+            <div class="summary-row">
+              <span>Items Subtotal:</span>
+              <strong id="cartSubtotal">$1,127.00</strong>
+            </div>
+
+            <div class="summary-row">
+              <span>Freight Shipping:</span>
+              <span style="color:#10B981; font-weight:700;">FREE</span>
+            </div>
+
+            <div class="coupon-box">
+              <input type="text" id="couponInput" class="form-input" placeholder="Promo Code (SAVE10)" style="text-transform:uppercase;">
+              <button class="btn-outline" id="applyCouponBtn">Apply</button>
+            </div>
+
+            <div class="summary-row total">
+              <span>Total Price:</span>
+              <span id="cartTotal">$1,127.00</span>
+            </div>
+
+            <button class="btn-primary" id="proceedCheckoutBtn" style="width:100%; margin-top:1.25rem;">
+              <i class="fas fa-lock"></i> Proceed to Secure Checkout
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </main>
+
+    <!-- ==========================================================================
+         TEMPLATE 6: CHECKOUT PAGE
+         ========================================================================== -->
+    <main id="template-checkout" class="page-view" style="display: none;">
+      <div class="page-container">
+        
+        <div style="margin-bottom: 1.5rem;">
+          <h1 style="font-size:2rem; margin-bottom:0.3rem;">Streamlined Checkout</h1>
+          <p style="color:var(--color-text-muted);">Fast, high-converting guest checkout experience.</p>
+        </div>
+
+        <div class="checkout-layout">
+          
+          <div class="checkout-sections">
+            
+            <div class="guest-toggle-banner">
+              <div>
+                <strong><i class="fas fa-user-check"></i> Guest Checkout Mode</strong>
+                <span style="display:block; font-size:0.78rem; color:#6B7280;">No account registration required.</span>
+              </div>
+            </div>
+
+            <!-- Customer Info -->
+            <div class="checkout-card">
+              <div class="checkout-card-header">
+                <span class="checkout-step-badge">1</span>
+                <h3>Customer Contact Information</h3>
+              </div>
+              <div class="form-grid-2">
+                <div class="form-group">
+                  <label>Email Address *</label>
+                  <input type="email" id="checkoutEmail" class="form-input" value="customer@example.com">
+                </div>
+                <div class="form-group">
+                  <label>Phone Number *</label>
+                  <input type="tel" class="form-input" value="(555) 432-8765">
+                </div>
+              </div>
+            </div>
+
+            <!-- Delivery Address -->
+            <div class="checkout-card">
+              <div class="checkout-card-header">
+                <span class="checkout-step-badge">2</span>
+                <h3>Freight Shipping Address</h3>
+              </div>
+              <div class="form-grid-2">
+                <div class="form-group">
+                  <label>First Name *</label>
+                  <input type="text" class="form-input" value="Sanny">
+                </div>
+                <div class="form-group">
+                  <label>Last Name *</label>
+                  <input type="text" class="form-input" value="Retailer">
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Street Address *</label>
+                <input type="text" class="form-input" value="742 Evergreen Terrace">
+              </div>
+            </div>
+
+            <!-- Payment Method -->
+            <div class="checkout-card">
+              <div class="checkout-card-header">
+                <span class="checkout-step-badge">3</span>
+                <h3>Payment Method</h3>
+              </div>
+
+              <div class="payment-method-selector">
+                <div class="payment-opt-card selected" data-method="card">
+                  <i class="fas fa-credit-card" style="font-size:1.3rem; margin-bottom:0.3rem; display:block;"></i>
+                  Credit Card
+                </div>
+                <div class="payment-opt-card" data-method="affirm">
+                  <i class="fas fa-hand-holding-dollar" style="font-size:1.3rem; margin-bottom:0.3rem; display:block;"></i>
+                  Affirm
+                </div>
+                <div class="payment-opt-card" data-method="paypal">
+                  <i class="fab fa-paypal" style="font-size:1.3rem; margin-bottom:0.3rem; display:block;"></i>
+                  PayPal
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Summary Card -->
+          <div class="cart-summary-card">
+            <h3 class="summary-title">Order Review</h3>
+            
+            <div id="checkoutSummaryItems" style="margin-bottom:1.25rem; max-height:200px; overflow-y:auto;">
+              <!-- Dynamic Summary -->
+            </div>
+
+            <div class="summary-row total">
+              <span>Final Total:</span>
+              <span id="checkoutGrandTotal">$1,127.00</span>
+            </div>
+
+            <button class="btn-primary" id="placeOrderBtn" style="width:100%; margin-top:1.25rem; padding:0.9rem;">
+              <i class="fas fa-check-circle"></i> Complete Test Purchase
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </main>
+
+    <!-- TEST PURCHASE ORDER CONFIRMATION MODAL -->
+    <div class="modal-backdrop" id="orderSuccessModal">
+      <div class="modal-content">
+        <div class="order-success-icon">
+          <i class="fas fa-check"></i>
+        </div>
+        <h2 style="font-size:1.6rem; margin-bottom:0.4rem;">Order Placed Successfully!</h2>
+        <p style="color:#6B7280; margin-bottom:1.25rem;">Order reference <strong id="modalOrderNum">#TC-849201</strong> verified via WooCommerce Guest Checkout.</p>
+        <button class="btn-primary" id="closeModalBtn" style="width:100%;">Return to Store Front</button>
+      </div>
+    </div>
+
+    <!-- SITE FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="logo-wrapper" style="margin-bottom:1rem;">
+            <div class="logo-icon">T</div>
+            <div class="logo-text">
+              <span class="title" style="color:#FFFFFF;">TEMIMA</span>
+              <span class="subtitle">CABINETRY & MILLWORK</span>
+            </div>
+          </div>
+          <p style="font-size:0.85rem; color:#9CA3AF;">
+            High-end solid wood cabinetry retail store. Custom RTA and pre-assembled kitchen and bath cabinetry.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>6 Template Suite</h4>
+          <ul class="footer-links">
+            <li><a href="#" data-target-template="home">1. Home Page</a></li>
+            <li><a href="#" data-target-template="category">2. Category / Shop</a></li>
+            <li><a href="#" data-target-template="product">3. Single Product</a></li>
+            <li><a href="#" data-target-template="quote">4. Get a Free Quote</a></li>
+            <li><a href="#" data-target-template="cart">5. Shopping Cart</a></li>
+            <li><a href="#" data-target-template="checkout">6. Guest Checkout</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Customer Care</h4>
+          <ul class="footer-links">
+            <li><a href="#">Order Tracking</a></li>
+            <li><a href="#">Assembly Instructions</a></li>
+            <li><a href="#">Freight Policy</a></li>
+            <li><a href="#">10-Year Warranty</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Hand-off & Docs</h4>
+          <p style="font-size:0.825rem; color:#9CA3AF; margin-bottom:0.85rem;">
+            Elementor Pro structures, WooCommerce PHP snippets, & speed guides included.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 Temima Cabinets. All rights reserved. www.temimacabinets.com</span>
+        <span>WordPress / WooCommerce / Elementor Pro Optimized</span>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Application JS Script -->
+  <script src="app.js"></script>
+</body>
+</html>
